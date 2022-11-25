@@ -1,0 +1,6 @@
+list=[19,11,18,29,24,21]
+s=0
+for i in list:
+    if i%2==0:
+        s=s+i
+        print("s",s)
