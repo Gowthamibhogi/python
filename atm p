@@ -1,0 +1,10 @@
+bal=50000
+amt=int(input("enter amount:"))
+if amt>bal:
+    print("insufficent balance")
+    print("please try again")
+else:
+    d=bal-amt
+    print("transaction processing successfully")
+    print("debited amount:",amt)
+    print("pending balance",d)
