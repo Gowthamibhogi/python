@@ -1,0 +1,25 @@
+empname=input("enter the name:")
+empdesign=input("enter designation:")
+basicsalary=int(input("enter salary:"))
+da=int(input("enter daily allowance:"))
+ta=int(input("enter travelling allowance:"))
+hra=int(input("enter house rental allowance:"))
+netsalary=basicsalary+da+ta+hra
+print("enter the name:",empname)
+print("enter designation:",empdesign)
+print("enter salary:",basicsalary)
+print("enter daily allowance:",da)
+print("enter travelling allowance:",ta)
+print("enter house rental allowance:",hra)
+print("basicsalary+da+ta+hra",netsalary)
+if netsalary>100000:
+        tax=netsalary*10/100
+if netsalary>50000:
+        tax=netsalary*7/70
+if netsalary>40000:
+        tax=netsalary*4/40
+if netsalary>20000:
+        tax=netsalary*2/20
+if netsalary<20000:
+        tax=0
+print("tax:",tax)
