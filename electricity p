@@ -1,0 +1,17 @@
+units=int(input("enter no of units:"))
+if units>0:
+    amt=units*1.5
+    charge=25
+elif units>100:
+    amt=(100*1.5)+(units-100)*2.5
+    charge=50
+elif units>200:
+    amt=(100*1.5)+(200-100)*2.5+(units-200)*4
+    charge=75
+elif units>300:
+    amt=(100*1.5)+(200-100)*2.5+(300-200)*4+(units-300)*5.6
+    charge=100
+else:
+    amt=0
+total=amt+charge
+print("electricity bill:",total)
