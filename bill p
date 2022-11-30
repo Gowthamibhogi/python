@@ -1,0 +1,29 @@
+potatoes=30
+tomatoes=30
+carrots=40
+onions=25
+brinjals=35
+cphone=input("enter customer phone number:")
+cname=input("enter customer name:")
+cadd=input("enter customer address:")
+pq=int(input("how many kgs of potatoes you want!"))
+tq=int(input("how many kgs of tomatoes you want!"))
+cq=int(input("how many kgs of carrots you want!"))
+oq=int(input("how many kgs of onions you want!"))
+bq=int(input("how many kgs of brinjals you want!"))
+bill=(pq*potatoes)+(tq*tomatoes)+(cq*carrots)+(oq*onions)+(bq*brinjals)
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+bill=tax+bill
+print("customer phone number:",cphone)
+print("customer name:",cname)
+print("customer address:",cadd)
+print("bill amount:",bill)
