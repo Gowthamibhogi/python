@@ -1,0 +1,20 @@
+n=int(input("enter how many num:"))
+num=int(input("enter any number"))
+max=num
+i=1
+while(i<n):
+    num=int(input("enter next num:"))
+    if num>max:
+        max=num
+    i=i+1
+print("maximum:",max)
+min=num
+i=1
+while(i<n):
+    num=int(input("enter next num:"))
+    if num>min:
+        min=num
+    i=i+1
+print("minimum:",min)
+diff=max-min
+print("difference:",max-min)
