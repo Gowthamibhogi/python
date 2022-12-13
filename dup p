@@ -1,0 +1,8 @@
+n=int(input("enter n:"))
+l=list(map(int,input().split()))
+g=[]
+for i in l:
+    if i not in g:
+        g.append(i)
+        g.sort(reverse=True)
+print(g)
