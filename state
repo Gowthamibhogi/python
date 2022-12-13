@@ -1,0 +1,9 @@
+a=[]
+a.append("west godavari")
+a.append("vizianagaram")
+a.append("east godavari")
+a.append("visakapatnam")
+a.append("srikakulam")
+print(a)
+a.sort()
+print(a)
