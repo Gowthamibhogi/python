@@ -1,0 +1,13 @@
+n=int(input("enter n:"))
+ol=list(map(int,input().split()))
+nl=[]
+pl=[]
+for i in range(0,n):
+    if (ol[i]>0):
+        pl.append(ol[i])
+    else:
+        nl.append(ol[i])
+ol=nl+pl
+for i in ol:
+    print(i,end=' ')
+print()
