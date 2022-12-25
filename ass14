@@ -1,0 +1,9 @@
+def is_Happy_num(n):
+    past=set()
+    while n!=1:
+        n=sum(int(i)**2 for i in str(n))
+        if n in past:
+            return n
+        pass.add
+    return n
+print(is_Happy_num(7))
