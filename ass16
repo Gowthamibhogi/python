@@ -1,0 +1,5 @@
+n=int(input())
+l=list(map(int,input().split()))
+big=max(l)
+small=min(l)
+print(big-small)
