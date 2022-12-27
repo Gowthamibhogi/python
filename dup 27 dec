@@ -1,0 +1,15 @@
+n=int(input())
+l=list(map(int,input().split()))
+x=int(input())
+c=0
+el=[]
+for i in range(0,n):
+    if l[i]==x:
+        el.append(i)
+        c=c+1
+if c==0:
+    print(-1)
+else:
+    print("element found at locations:")
+    for i in el:
+        print(i,end="")
