@@ -1,0 +1,7 @@
+def rotLeft(a,d):
+    for i in range(0,d):
+        first=a[0]
+        for j in range(0,n-1):
+            a[j]=a[j+1]
+        a[n-1]=first
+    return a
