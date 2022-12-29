@@ -1,0 +1,6 @@
+def unique_nums(nums):
+ return [i for i in nums if nums.count(i)==1]
+nums = list(map(int,input().split()))
+print("Original list of numbers:",nums)
+print("After removing the duplicate numbers from the said list:")
+print(unique_nums(nums))
