@@ -1,0 +1,17 @@
+n=int(input())
+a=[]
+sum=0
+num=0
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    a.append(l)
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            sum=sum+a[i][j]
+        if i+j==n-1:
+            num=num+a[i][j]
+print(sum-num)
